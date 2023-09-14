@@ -11,7 +11,11 @@ function App() {
   const [totalPrice, SetTotalPrice] = useState(0);
 
   const handleSelectedCourse = (course) => {
-    if (!selectedCourse.includes(course.title)) {
+    if (totalCredits >= 20) {
+      alert("Credit hours full");
+    } else if (selectedCourse.includes(course.title)) {
+      alert("You have already selected this course");
+    } else {
       SetSelectedCourse([...selectedCourse, course.title]);
 
       const newTotalCredits = Math.min(totalCredits + course.credit, 20);
