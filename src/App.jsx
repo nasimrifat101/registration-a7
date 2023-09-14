@@ -29,7 +29,7 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <div className="flex mx-6">
+      <div className="flex flex-col lg:flex-row mx-6">
         <Cards handleSelectedCourse={handleSelectedCourse}></Cards>
         <Bookmarks
           selectedCourse={selectedCourse}

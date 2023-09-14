@@ -13,7 +13,7 @@ const Cards = ({ handleSelectedCourse }) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 w-9/12">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 w-9/12">
       {cards.map((data) => (
         <Card
           key={data.id}
