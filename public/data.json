@@ -5,7 +5,7 @@
       "title": "Introduction to C Programming",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 23895,
-      "credit": 14
+      "credit": 2
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
       "title": "Introduction to Algorithms",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 39871,
-      "credit": 12
+      "credit": 3
     },
     {
       "id": 3,
@@ -21,7 +21,7 @@
       "title": "Introduction to C++ for DSA",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 20743,
-      "credit": 9
+      "credit": 5
     },
     {
       "id": 4,
@@ -29,7 +29,7 @@
       "title": "Basic Data Structures",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 13498,
-      "credit": 18
+      "credit": 1
     },
     {
       "id": 5,
@@ -37,7 +37,7 @@
       "title": "Introduction to OOP Python",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 29874,
-      "credit": 6
+      "credit": 3
     },
     {
       "id": 6,
@@ -45,7 +45,7 @@
       "title": "Software Engineering",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 41926,
-      "credit": 13
+      "credit": 9
     },
     {
       "id": 7,
@@ -53,7 +53,7 @@
       "title": "AWS, Cloud Computing",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 18653,
-      "credit": 17
+      "credit": 4
     },
     {
       "id": 8, 
@@ -61,7 +61,7 @@
       "title": "Database (MySQL)",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 15547,
-      "credit": 15
+      "credit": 5
     },
     {
       "id": 9, 
@@ -69,6 +69,6 @@
       "title": "Problem-Solving",
       "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": 44762,
-      "credit": 11
+      "credit": 6
     }
 ]

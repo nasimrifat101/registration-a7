@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Card from "../card/Card";
 import Bookmarks from "../bookmarks/Bookmarks";
 
-const Cards = () => {
+const Cards = ({ handleSelectedCourse }) => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,11 @@ const Cards = () => {
   return (
     <div className="grid grid-cols-3 w-9/12">
       {cards.map((data) => (
-        <Card key={data.id} data={data}></Card>
+        <Card
+          key={data.id}
+          data={data}
+          handleSelectedCourse={() => handleSelectedCourse(data)}
+        ></Card>
       ))}
     </div>
   );
