@@ -2,8 +2,12 @@ import "./App.css";
 import Bookmarks from "./components/bookmarks/Bookmarks";
 import Cards from "./components/cards/Cards";
 import Header from "./components/header/Header";
-
 import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+
+
 
 function App() {
   const [selectedCourse, SetSelectedCourse] = useState([]);
@@ -12,17 +16,17 @@ function App() {
 
   const handleSelectedCourse = (course) => {
     if (totalCredits >= 20) {
-      alert("Credit hours full");
+      toast.error("Credit hours full");
     } else if (selectedCourse.includes(course.title)) {
-      alert("You have already selected this course");
+      toast.warning("You have already selected this course");
     } else {
       SetSelectedCourse([...selectedCourse, course.title]);
 
       const newTotalCredits = Math.min(totalCredits + course.credit, 20);
       setTotalCredits(newTotalCredits);
 
-      const NewTotalPrice = totalPrice + course.price;
-      SetTotalPrice(NewTotalPrice);
+      const newTotalPrice = totalPrice + course.price;
+      SetTotalPrice(newTotalPrice);
     }
   };
 
@@ -37,6 +41,7 @@ function App() {
           totalPrice={totalPrice}
         ></Bookmarks>
       </div>
+      <ToastContainer /> {}
     </div>
   );
 }
